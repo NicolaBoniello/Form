@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Structure</title>
+    </head>
+    <body>
+        <form>
+            <!-- Text input -->
+            <div id="first_last_name">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" placeholder="E.g Nicola">
+            
+            <!-- Text input -->
+            
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" placeholder="E.g Boniello">
+            </div>
+            <p></p>
+
+            <div id="email_password">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="example@gmail.com" id="email">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="********" id="password">
+            </div>
+            <div id="newsletter_terms">
+            <!-- Checkbox -->
+            <input type="checkbox" name="subscribe" value="subscribed">
+            <label for="subscribe">Subscribe to the newsletter</label>
+             <p></p> 
+            <!-- Checkbox -->
+            <input type="checkbox" name="terms" value="agreed">
+            <label for="terms">Agree to terms and conditions</label>
+            </div>
+            <p></p>
+            
+            <div id="gender">
+            <!-- Radio button -->
+            <label for="gender">choose gender:</label>
+            
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="not specified" name="gender" value="not specified">
+            <label for="not specified">Not specified</label>
+            </div>
+            <p></p>
+            <div id="submit_button">
+            <button>Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
