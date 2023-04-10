@@ -8,22 +8,25 @@
             <!-- Text input -->
             <div id="first_last_name">
             <label for="first_name">First Name:</label>
-            <input type="text" name="first_name" placeholder="E.g Nicola">
+            <input type="text" name="first_name" placeholder="E.g Nicola" 
+            required pattern="[A-Za-z]+" minlength="2" maxlength="20">
             
             <!-- Text input -->
             
             <label for="last_name">Last Name:</label>
-            <input type="text" name="last_name" placeholder="E.g Boniello">
+            <input type="text" name="last_name" placeholder="E.g Boniello" 
+            required required pattern="[A-Za-z]+" minlength="2" maxlength="30">
             </div>
+            
             <p></p>
-
             <div id="email_password">
                 <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="example@gmail.com" id="email">
+                <input type="email" name="email" placeholder="example@gmail.com" id="email" required>
 
                 <label for="password">Password:</label>
-                <input type="password" name="password" placeholder="********" id="password">
+                <input type="password" name="password" placeholder="********" id="password" required>
             </div>
+            
             <p></p>
             <div id="newsletter_terms">
             <!-- Checkbox -->
@@ -31,15 +34,14 @@
             <label for="subscribe">Subscribe to the newsletter</label>
              <p></p> 
             <!-- Checkbox -->
-            <input type="checkbox" name="terms" value="agreed">
+            <input type="checkbox" name="terms" value="agreed" required>
             <label for="terms">Agree to terms and conditions</label>
             </div>
-            <p></p>
             
+            <p></p>
             <div id="gender">
             <!-- Radio button -->
             <label for="gender">choose gender:</label>
-            
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female">
@@ -47,6 +49,7 @@
             <input type="radio" id="not specified" name="gender" value="not specified">
             <label for="not specified">Not specified</label>
             </div>
+            
             <p></p>
             <div id="favourite_fruit">
                 <label for="favourite_fruit">Choose your favourite fruit</label>
@@ -59,6 +62,18 @@
                     <option value="peach">Peach</option>
                 </select>
             </div>
+
+            <p></p>
+            <label for="favourite_flavor">What's your favourite ice cream flavor?</label>
+            <input 
+            type="text" name="favourite_flavor"
+            id="favourite_flavor" list="options">
+            <datalist id="options">
+                <option value="Chocolate">
+                <option value="Vanilla">
+                <option value="Mint">
+            </datalist>
+            
             <p></p>
             <div id="reporting bugs">
                 <label for="message">Reporting your bug here:</label>
